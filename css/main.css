@@ -1,0 +1,418 @@
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video #header {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    }
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+    display: block;
+    }
+    body {
+    line-height: 1;
+    height: 100%;
+	margin: 0 0 100px; /* bottom = footer height */
+    }
+    ol, ul {
+    list-style: none;
+    }
+    blockquote, q {
+    quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    content: '';
+    content: none;
+    }
+    table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+
+    html{
+    position: relative;
+	min-height: 100%;
+	}
+	#wrap{
+	min-height: 100%;
+
+	}
+/*----- End of Reset ------*/
+body{
+	margin: 0 auto;
+	background-image: url("../img/bg.png");
+	width: 100%;
+
+}
+header{
+	width: 100%;
+	height:120px;
+	margin:0 auto;
+	background-image: url("../img/header.png");
+	background-repeat:repeat-x;
+}
+#wrap{
+	padding-top: 40px;
+	width: 1140px;
+	margin:0 auto;
+	height:500px;
+	background-image: url("../img/whitebg.png");
+}
+header h1{
+	background-image: url("../img/headerTwo.png");
+	background-repeat:no-repeat;
+	background-position-y: 11px;
+	width:1140px;
+	height:71px;
+	margin: 0 auto;
+	position:relative;
+	z-index: 1000;
+}
+p{
+	padding: 10px 20px 20px 20px;		
+	font-family:"Myriad Pro", Times, sans-serif; 
+    color:#666;
+    font-size: 12px;	
+}
+h3{
+	padding: 30px 20px 10px 20px;
+	font-family:"Myriad Pro", Times, sans-serif; 
+    color:#666;
+	font-weight: bold;
+    font-size: 16px;	
+}
+footer{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+	background-image: url("../img/footer.png");
+}
+footer h1{
+	margin: 0 auto;
+	width: 120px;
+	font-family:"Myriad Pro", Times, sans-serif; 
+    color:#666;
+}
+#logo {
+	background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	position: relative;
+	left: 98px;
+	top: 13px;
+	width:200px;
+	height: 60px;
+	display:block;
+}
+tr.rowodd { 
+}
+tr.roweven { 
+    background-color: #F2F2F2; 
+}
+tr.highlight { 
+    background-color: #F2F29F; 
+    cursor: pointer; 
+}
+tr a{ 
+    text-decoration: none;    
+}
+.sortcol { 
+    cursor: pointer; 
+    padding-right: 8px; 
+    background-repeat: no-repeat; 
+    background-position: right center; 
+} 
+.sortasc {  
+    background-color: #DDFFAC; 
+} 
+.sortdesc { 
+    background-color: #B9DDFF; 
+} 
+.nosort { 
+    cursor: default; 
+}
+th.resize-handle-active { 
+    cursor: e-resize; 
+}
+div.resize-handle { 
+    cursor: e-resize; 
+    width: 2px; 
+    border-right: 1px dashed #1E90FF; 
+    position:absolute; 
+    top:0; 
+    left:0; 
+}
+#studentLoginForm{
+	width: 320px;
+	float:left;
+	margin-left:100px;
+}
+#login{
+	width: 180px;
+	padding-left:40px;	
+	float:left;
+	
+}
+#studentLogin{
+	width: 180px;
+	padding-left:40px;
+	float:left;	
+	margin-left:200px;
+}
+#register{
+	width: 180px;
+	margin-left:100px;	
+	float:left;
+	margin-left:200px;
+}
+#registerForm{
+	width: 267px;
+}
+label[for=firstname]{
+	font-family:"Myriad Pro", Times, sans-serif; 
+    color:#666;
+	font-weight: bold;
+    font-size: 14px;
+}
+label[for=lastname]{
+	font-family:"Myriad Pro", Times, sans-serif; 
+    color:#666;
+	font-weight: bold;
+    font-size: 14px;
+}
+label[for=email]{
+	font-family:"Myriad Pro", Times, sans-serif; 
+    color:#666;
+	font-weight: bold;
+    font-size: 14px;
+	padding-right: 12px;
+}
+label[for=pass]{
+	font-family:"Myriad Pro", Times, sans-serif; 
+    color:#666;
+	font-weight: bold;
+    font-size: 14px;	
+}
+label[for=captcha]{
+	font-family:"Myriad Pro", Times, sans-serif; 
+    color:#666;
+	font-weight: bold;
+    font-size: 14px;	
+}
+input{
+	border-radius: 3px;
+	height: 24px;
+	margin-bottom:5px;	
+}
+input[type=text]{
+	font-family:"Helvetica", Times, sans-serif; 
+    color:#666;
+    font-size: 14px;	
+}
+input[type=submit]{
+	background-color: #E95C1F;	
+}
+#registerNow{
+	background-image: url("../img/registerNow.png");
+	background-repeat: no-repeat;
+	position: relative;
+	left: 839px;
+	height:103px;
+	width:260px;
+}
+input[type=text]{
+	width:250px;
+}
+#registerPass{
+	width: 250px	
+}
+#loginPass{
+	width: 250px;	
+}
+#loginFName{
+	width: 250px;
+}
+#log{
+	font-family:"Myriad Pro", Times, sans-serif; 
+    color:#666;
+	font-weight: bold;
+    font-size: 18px;
+	position:relative;
+	left: 38px;
+	bottom:104px;
+}
+#email{
+	width: 250px;
+}
+.error error-keyup-1{
+	color:#F00;
+}
+#slog{
+	font-family:"Myriad Pro", Times, sans-serif; 
+    color:#666;
+	font-weight: bold;
+    font-size: 18px;
+	position:relative;
+	bottom: 122px;
+	left:134px;
+}
+#rlog{
+	font-family:"Myriad Pro", Times, sans-serif; 
+    color:#666;
+	font-weight: bold;
+    font-size: 18px;
+	position:relative;
+	top: -39px;
+	left:200px;
+}
+table{
+	margin-left: 24px;	
+	border: 1px solid #999;
+}
+#stuAdd{
+	margin-bottom:20px;
+	margin-left:25px;	
+}
+#save{
+	margin-left: 7px;
+	margin-bottom: 24px;
+	background-color:#E95C1F;
+	border-radius: 3px;
+}
+#save a{
+	text-decoration: none;	
+	color:#000;	
+}
+#delete{
+	background-color:#E95C1F;
+	border-radius: 3px;
+}
+#delete a{
+	color:#000;	
+	
+}
+th{
+	font-family:"Myriad Pro", Times, sans-serif; 
+    color:#666;
+    font-size: 14px;
+	padding-top:5px;
+	padding-left: 5px;
+}
+td{
+	font-family:"Myriad Pro", Times, sans-serif; 
+    color:#666;
+    font-size: 14px;
+	padding-top: 5px;
+	padding-left:7px;
+}
+#edit{
+	background-color:#E95C1F;
+}
+#logout{
+	background-color:#E95C1F;
+	margin-left:40px;
+	margin-bottom:20px;
+	border-radius: 3px;
+}
+#edit a{
+	text-decoration: none;	
+	color:#000;	
+}
+#logout a{
+	text-decoration: none;	
+	color:#000;		
+}
+#logoutTwo{
+	background-color:#E95C1F;
+	margin-left:40px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+}
+#logoutTwo a{
+	text-decoration: none;	
+	color:#000;			
+}
+input.grading{
+	width: 212px;	
+}
+@-moz-document url-prefix() {
+     header h1 {
+         position:relative;
+		 top:11px;
+    }
+}
+#mail{
+	margin-left: 350px;	
+	
+}
+label[for=subject]{
+	font-family:"Myriad Pro", Times, sans-serif; 
+    color:#666;
+	font-weight: bold;
+    font-size: 14px;	
+}
+label[for=message]{
+	font-family:"Myriad Pro", Times, sans-serif; 
+    color:#666;
+	font-weight: bold;
+    font-size: 14px;	
+}
+#lg{
+	background-color:#E95C1F;
+	margin-left:349px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+}
+#lg a{
+	text-decoration: none;	
+	color:#000;	
+}
+#goback{
+	background-color:#E95C1F;
+	border-radius: 3px;
+}
+#goback a{
+	text-decoration: none;	
+	color:#000;		
+}
+td button{
+	background-color:#E95C1F;
+}
+td button a{
+	color:#000;
+	border-radius: 3px;
+}
+#addaStudent{
+	font-family:"Myriad Pro", Times, sans-serif; 
+    color:#666;
+	font-weight: bold;
+    font-size: 18px;
+	padding-bottom:10px;
+	padding-left:20px;	
+}
+form h1{
+	font-family:"Myriad Pro", Times, sans-serif; 
+    color:#666;
+	font-weight: bold;
+    font-size: 18px;
+	padding-bottom:10px;
+}
+input#captcha{
+	width: 114px;	
+	
+}
